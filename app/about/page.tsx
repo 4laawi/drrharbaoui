@@ -16,7 +16,7 @@ export default function About() {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">À propos</h1>
           <p className="text-xl text-teal-100 max-w-3xl mx-auto">
-            Découvrez le parcours professionnel et l'engagement du Dr. Rharbaoui
+            Découvrez le parcours professionnel et l&apos;engagement du Dr. Rharbaoui
           </p>
         </div>
       </section>
