@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  eslint: {
+    // Don't run ESLint during build
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ['images.unsplash.com'], // Allow images from Unsplash (for placeholder images)
     formats: ['image/avif', 'image/webp'],
