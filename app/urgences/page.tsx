@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 export default function Urgences() {
-  // Phone number (replace with the actual number)
-  const phoneNumber = "+33123456789";
-  const whatsappNumber = "33123456789";
+  // Phone number
+  const phoneNumber = "+212687921658";
+  const whatsappNumber = "212687921658";
 
   return (
     <>

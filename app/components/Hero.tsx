@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaCalendarCheck, FaStethoscope, FaPhone, FaCheck, FaStar, FaHeartbeat } from "react-icons/fa";
+import { FaCalendarCheck, FaStethoscope, FaPhone, FaCheck, FaStar, FaHeartbeat, FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 
@@ -51,13 +51,7 @@ export default function Hero() {
         </div>
 
         
-        {/* Emergency floating pill - appears on scroll */}
-        <div className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${scrolled ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <a href="tel:0712345678" className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full shadow-lg flex items-center space-x-2">
-            <FaPhone className="animate-pulse" size={14} />
-            <span className="font-medium text-sm">07 12 34 56 78</span>
-          </a>
-        </div>
+        {/* Emergency floating pill removed - now only using the WhatsApp button in layout.tsx */}
 
         {/* Wavy SVG bottom clip - moved slightly up to overlap */}
         <div className="absolute bottom-[-1px] left-0 right-0 z-10 pointer-events-none select-none">
@@ -78,7 +72,7 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-100 drop-shadow-lg text-center mb-3 line-clamp-2">
-              Cardiologue à Rabat — Dr Rharbaoui
+              Cardiologue à Mohammedia — Dr Rharbaoui
             </h1>
             
             {/* Subheadline */}
@@ -96,11 +90,13 @@ export default function Hero() {
                 Prendre rendez-vous
               </Link>
               <Link 
-                href="/contact" 
-                className="w-full sm:w-auto group bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/50 font-semibold py-3 px-8 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
+                href="https://wa.me/212687921658" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto group bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
               >
-                <FaPhone className="mr-3 group-hover:rotate-12 transition-transform duration-300" />
-                Contactez-nous
+                <FaWhatsapp className="mr-3 text-xl group-hover:rotate-12 transition-transform duration-300" />
+                WhatsApp
               </Link>
             </div>
           </div>
@@ -126,7 +122,7 @@ export default function Hero() {
               <div className="text-lg">
                 {statsVisible && (
                   <CountUp
-                    end={700}
+                    end={2200}
                     duration={2}
                     suffix="+ cas"
                     useEasing={true}

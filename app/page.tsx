@@ -26,7 +26,7 @@ export default function Home() {
               <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image 
                   src="/cabinet.jpg" 
-                  alt="Cabinet de cardiologie Dr. Rharbaoui à Rabat" 
+                  alt="Cabinet de cardiologie Dr. Rharbaoui à Mohammedia" 
                   fill
                   style={{objectFit: "cover"}}
                   className="rounded-3xl"
@@ -44,10 +44,10 @@ export default function Home() {
               className="w-full lg:w-1/2 lg:pr-8"
             >
               <span className="text-teal-600 font-medium mb-2 block">À propos du cabinet</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Cardiologue à Rabat – Dr Rharbaoui</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Cardiologue à Mohammedia – Dr Rharbaoui</h2>
               
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                « Vous cherchez un cardiologue à Rabat pour un ECG, une échographie cardiaque ou un bilan complet ? Notre cabinet, reconnu pour son expertise et ses délais courts, reçoit les patients de Hassan, Agdal, Hay Riad, Souissi. »
+                « Vous cherchez un cardiologue à Mohammedia pour un ECG, une échographie cardiaque ou un bilan complet ? Notre cabinet, reconnu pour son expertise et ses délais courts, reçoit les patients de toute la ville et des environs. »
               </p>
               
               <p className="text-lg text-gray-700 mb-10 leading-relaxed">
@@ -490,7 +490,7 @@ export default function Home() {
             {/* Map */}
             <div className="flex-1 rounded-xl overflow-hidden shadow-xl min-h-[320px] mb-8 lg:mb-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11553.003839363171!2d3.8107412339079105!3d43.62213537296617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ade783c03c67%3A0xf7a09bb277272303!2sDr%20RHARBAOUI!5e0!3m2!1sen!2sma!4v1756797368816!5m2!1sen!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.1469045848194!2d-7.3943109!3d33.6787338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQwJzQzLjQiTiA3wrAyMyczMC4zIlc!5e0!3m2!1sfr!2sma!4v1715374104037!5m2!1sfr!2sma"
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
@@ -518,7 +518,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3">
                     <FaHospital className="h-5 w-5 text-red-500" />
-                    <span>Dimanche: <span className="font-medium text-gray-700">Fermé</span> <span className="text-xs text-gray-500">(urgences uniquement)</span></span>
+                    <span>Dimanche: <span className="font-medium text-gray-700">Fermé</span> <span className="text-xs text-gray-500">(disponible pour consultations à domicile / urgences)</span></span>
                   </li>
                 </ul>
               </div>

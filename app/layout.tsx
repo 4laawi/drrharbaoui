@@ -4,6 +4,8 @@ import "./globals.css";
 import TopBar from "./components/TopBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     default: "Dr. Rharbaoui | Cardiologue",
     template: "%s | Dr. Rharbaoui"
   },
-  description: "Cabinet de cardiologie du Dr. Rharbaoui, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
+  description: "Cabinet de cardiologie du Dr. Rharbaoui à Mohammedia, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
   keywords: "cardiologue, cardiologie, médecin, santé cardiaque, ECG, échographie cardiaque, consultation, rendez-vous médical, holter tensionnel, holter ECG, urgence cardiaque",
   robots: {
     index: true,
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
   category: "health",
   openGraph: {
     title: "Dr. Rharbaoui | Cardiologue",
-    description: "Cabinet de cardiologie du Dr. Rharbaoui, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
+    description: "Cabinet de cardiologie du Dr. Rharbaoui à Mohammedia, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
     url: "https://www.drrharbaoui.com",
     siteName: "Dr. Rharbaoui Cardiologue",
     images: [
@@ -62,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dr. Rharbaoui | Cardiologue",
-    description: "Cabinet de cardiologie du Dr. Rharbaoui, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
+    description: "Cabinet de cardiologie du Dr. Rharbaoui à Mohammedia, spécialiste en santé cardiaque proposant consultations, ECG, échocardiogrammes et soins à domicile.",
     images: ["/images/og-image.jpg"],
     creator: "@drrharbaoui",
   },
@@ -100,6 +102,19 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        
+        {/* Floating WhatsApp Button - visible on scroll */}
+        <div className="fixed bottom-6 right-6 z-50 transition-all duration-300">
+          <Link 
+            href="https://wa.me/212687921658" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+            aria-label="Contactez-nous sur WhatsApp"
+          >
+            <FaWhatsapp className="text-2xl" />
+          </Link>
+        </div>
       </body>
     </html>
   );

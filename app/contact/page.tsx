@@ -68,8 +68,8 @@ export default function Contact() {
                     <div>
                       <h3 className="font-medium mb-1">Téléphone</h3>
                       <p className="text-teal-100">
-                        <Link href="tel:+33123456789" className="hover:text-white transition duration-300">
-                          +33 1 23 45 67 89
+                        <Link href="tel:+212687921658" className="hover:text-white transition duration-300">
+                          +212 6 87 92 16 58
                         </Link>
                       </p>
                     </div>
@@ -82,8 +82,8 @@ export default function Contact() {
                     <div>
                       <h3 className="font-medium mb-1">WhatsApp</h3>
                       <p className="text-teal-100">
-                        <Link href="https://wa.me/33123456789" className="hover:text-white transition duration-300">
-                          +33 1 23 45 67 89
+                        <Link href="https://wa.me/212687921658" className="hover:text-white transition duration-300">
+                          +212 6 87 92 16 58
                         </Link>
                       </p>
                     </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                       <ul className="text-teal-100 space-y-1">
                         <li>Lundi - Vendredi: 9h - 19h</li>
                         <li>Samedi: 9h - 13h</li>
-                        <li>Dimanche: Fermé</li>
+                        <li>Dimanche: Fermé (disponible pour consultations à domicile / urgences)</li>
                       </ul>
                     </div>
                   </div>
@@ -205,7 +205,7 @@ export default function Contact() {
           <div className="bg-gray-200 rounded-xl overflow-hidden h-96 shadow-lg">
             {/* Google Maps iframe - Replace the src with an actual Google Maps embed URL */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047342297!2d2.3354307155089247!3d48.873765179288906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sPlace%20de%20l%27Op%C3%A9ra%2C%2075009%20Paris!5e0!3m2!1sfr!2sfr!4v1637595769748!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.1469045848194!2d-7.3943109!3d33.6787338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQwJzQzLjQiTiA3wrAyMyczMC4zIlc!5e0!3m2!1sfr!2sma!4v1715374104037!5m2!1sfr!2sma"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -227,11 +227,11 @@ export default function Contact() {
                 N'hésitez pas à nous contacter directement par téléphone pour obtenir un rendez-vous dans les plus brefs délais.
               </p>
               <Link 
-                href="tel:+33123456789"
+                href="tel:+212687921658"
                 className="bg-white text-teal-600 hover:bg-teal-50 font-medium py-3 px-8 rounded-full shadow-lg transition duration-300 inline-flex items-center"
               >
                 <FaPhone className="mr-2" />
-                +33 1 23 45 67 89
+                +212 6 87 92 16 58
               </Link>
             </div>
           </div>

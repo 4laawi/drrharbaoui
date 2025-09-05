@@ -83,13 +83,13 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FaPhone className="h-5 w-5 text-teal-300 mr-3" />
-                <Link href="tel:+33123456789" className="text-gray-300 hover:text-teal-300 transition duration-300">
-                  +33 1 23 45 67 89
+                <Link href="tel:+212687921658" className="text-gray-300 hover:text-teal-300 transition duration-300">
+                  +212 6 87 92 16 58
                 </Link>
               </li>
               <li className="flex items-center">
                 <FaWhatsapp className="h-5 w-5 text-teal-300 mr-3" />
-                <Link href="https://wa.me/33123456789" className="text-gray-300 hover:text-teal-300 transition duration-300">
+                <Link href="https://wa.me/212687921658" className="text-gray-300 hover:text-teal-300 transition duration-300">
                   WhatsApp
                 </Link>
               </li>
