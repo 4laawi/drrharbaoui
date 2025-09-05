@@ -35,7 +35,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden pt-8 md:pt-12 anchor-section">
+      <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden pt-8 md:pt-12 anchor-section">
         {/* Background image */}
         <div className="absolute inset-0 w-full h-full">
           <img
@@ -61,27 +61,29 @@ export default function Hero() {
         </div>
 
         {/* Main Hero Content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex flex-col justify-between min-h-[60vh] py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex flex-col justify-center min-h-[70vh] py-10">
           {/* Top content */}
           <div className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto">
             {/* Availability pill */}
-            <div className="bg-teal-500/80 backdrop-blur-sm text-white py-1.5 px-4 rounded-full text-sm font-medium inline-flex items-center shadow-md mb-4">
+            <div className="bg-teal-500/80 backdrop-blur-sm text-white py-1.5 px-4 rounded-full text-sm font-medium inline-flex items-center shadow-md mb-8">
               <div className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></div>
               Prochains créneaux : aujourd&apos;hui &amp; demain
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-100 drop-shadow-lg text-center mb-3 line-clamp-2">
-              Cardiologue à Mohammedia — Dr Rharbaoui
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-teal-100 drop-shadow-lg text-center mb-6 leading-relaxed md:leading-relaxed">
+              <span className="italic font-medium">Cardiologue à Mohammedia</span>
+              <br className="my-2" />
+              <span className="block mt-2 text-4xl md:text-5xl lg:text-6xl">Dr Rharbaoui</span>
             </h1>
             
             {/* Subheadline */}
-            <p className="text-white/90 text-lg md:text-xl text-center leading-relaxed mb-6 max-w-3xl line-clamp-2">
+            <p className="text-white/90 text-lg md:text-xl text-center leading-relaxed mb-10 max-w-3xl px-4">
               Consultations et examens sur place (ECG, échographie, Holter). Rendez-vous sous 24–48 h, prise en charge CNSS / mutuelles.
             </p>
 
             {/* CTA buttons */}
-            <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 mb-6">
+            <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-6 mb-10">
               <Link 
                 href="/booking" 
                 className="w-full sm:w-auto group bg-white hover:bg-teal-50 text-teal-700 font-semibold py-3 px-8 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
