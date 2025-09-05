@@ -4,8 +4,7 @@ import "./globals.css";
 import TopBar from "./components/TopBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { FaWhatsapp } from "react-icons/fa";
-import Link from "next/link";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -103,18 +102,8 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         
-        {/* Floating WhatsApp Button - visible on scroll */}
-        <div className="fixed bottom-6 right-6 z-50 transition-all duration-300">
-          <Link 
-            href="https://wa.me/212687921658" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
-            aria-label="Contactez-nous sur WhatsApp"
-          >
-            <FaWhatsapp className="text-2xl" />
-          </Link>
-        </div>
+        {/* Floating WhatsApp Button - visible only on scroll */}
+        <WhatsAppButton />
       </body>
     </html>
   );
