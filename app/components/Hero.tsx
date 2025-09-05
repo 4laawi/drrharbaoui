@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaCalendarCheck, FaStethoscope, FaPhone, FaCheck, FaStar, FaHeartbeat } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
+import CountUp from "react-countup";
 
 export default function Hero() {
   const [scrolled, setScrolled] = useState(false);
@@ -109,13 +110,40 @@ export default function Hero() {
             <div className="h-px bg-white/20 mb-4"></div>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-white/90">
               <div className="flex items-center">
-                <span className="font-semibold text-lg">98%</span>
+                <span className="font-semibold text-lg">
+                  {statsVisible && (
+                    <CountUp
+                      end={98}
+                      duration={2}
+                      suffix="%"
+                      useEasing={true}
+                    />
+                  )}
+                </span>
                 <span className="ml-1">satisfaction</span>
               </div>
               <span className="hidden sm:inline-block text-white/30">•</span>
-              <div className="text-lg">700+ cas</div>
+              <div className="text-lg">
+                {statsVisible && (
+                  <CountUp
+                    end={700}
+                    duration={2}
+                    suffix="+ cas"
+                    useEasing={true}
+                  />
+                )}
+              </div>
               <span className="hidden sm:inline-block text-white/30">•</span>
-              <div className="text-lg">500+ patients</div>
+              <div className="text-lg">
+                {statsVisible && (
+                  <CountUp
+                    end={500}
+                    duration={2}
+                    suffix="+ patients"
+                    useEasing={true}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
